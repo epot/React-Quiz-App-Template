@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { ReactComponent as Animals } from '../assets/icons/rabbit-animals.svg'
 import { ReactComponent as Cities } from '../assets/icons/city.svg'
+import { ReactComponent as Rofl } from '../assets/icons/rofl.svg'
 
 type QuizTopic = {
   title: string
@@ -16,5 +17,9 @@ export const quizTopics: QuizTopic[] = [
   {
     title: 'Capitales',
     icon: <Cities />,
+  },
+  {
+    title: 'Debiles',
+    icon: <Rofl />,
   },
 ]

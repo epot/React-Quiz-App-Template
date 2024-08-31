@@ -1,4 +1,4 @@
-import { generalKnowledge } from './generalKnowledge'
+import { animals } from './animals'
 import { javascript } from './javascript'
 import { python } from './python'
 import { react } from './react'
@@ -34,5 +34,5 @@ export const quiz: Record<string, Topic> = {
   JavaScript: javascript,
   React: react,
   Python: python,
-  'General Knowledge': generalKnowledge,
+  'Animaux': animals,
 }

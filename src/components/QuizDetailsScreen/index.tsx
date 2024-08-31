@@ -50,28 +50,27 @@ const QuizDetailsScreen = () => {
         <LogoContainer>
           <AppLogo />
         </LogoContainer>
-        <AppTitle>XEVEN QUIZ</AppTitle>
+        <AppTitle>Quizz de Mimi et Deden</AppTitle>
         <DetailTextContainer>
           <DetailText>
-            Selected Quiz Topic: <HighlightedText>{selectedQuizTopic}</HighlightedText>
+            Catégorie choisie: <HighlightedText>{selectedQuizTopic}</HighlightedText>
           </DetailText>
           <DetailText>
-            Total questions to attempt:{' '}
+            Nombres de réponses attendues:{' '}
             <HighlightedText>{totalQuestions}</HighlightedText>
           </DetailText>
           <DetailText>
-            Score in total: <HighlightedText>{totalScore}</HighlightedText>
+            Score total: <HighlightedText>{totalScore}</HighlightedText>
           </DetailText>
           <DetailText>
-            Total time: <HighlightedText>{convertSeconds(totalTime)}</HighlightedText>
+            Temps accordé: <HighlightedText>{convertSeconds(totalTime)}</HighlightedText>
           </DetailText>
           <DetailText>
-            To save time, you can skip questions. Skipped questions will show up at the
-            end of the quiz.
+            Pour gagner du temps, vous pouvez sauter des questions.
           </DetailText>
         </DetailTextContainer>
         <Button
-          text="Start"
+          text="Démarrer"
           icon={<StartIcon />}
           iconPosition="left"
           onClick={goToQuestionScreen}
